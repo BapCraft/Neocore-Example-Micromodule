@@ -1,14 +1,12 @@
 package io.neocore.examplemicromodule;
 
-import java.util.function.Consumer;
-
 import io.neocore.api.NeocoreAPI;
 import io.neocore.api.host.broadcast.BroadcastService;
 import io.neocore.api.host.chat.ChatEvent;
 import io.neocore.api.listeners.SimpleListener;
 import io.neocore.api.module.Module;
 
-public class ChatListener implements SimpleListener, Consumer<ChatEvent> {
+public class ChatListener implements SimpleListener<ChatEvent> {
 
 	private ExampleMicromodule module;
 	

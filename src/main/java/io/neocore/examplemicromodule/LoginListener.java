@@ -1,14 +1,12 @@
 package io.neocore.examplemicromodule;
 
-import java.util.function.Consumer;
-
 import io.neocore.api.NeocoreAPI;
 import io.neocore.api.host.broadcast.BroadcastService;
 import io.neocore.api.host.login.PostLoginEvent;
 import io.neocore.api.listeners.SimpleListener;
 import io.neocore.api.module.Module;
 
-public class LoginListener implements SimpleListener, Consumer<PostLoginEvent> {
+public class LoginListener implements SimpleListener<PostLoginEvent> {
 
 	private ExampleMicromodule module;
 	
